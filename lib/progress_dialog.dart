@@ -99,7 +99,7 @@ class ProgressDialog {
   }
 
   /// Creates an indeterminate progress indicator.
-  _normalProgress({Color? valueColor, Color? bgColor}) {
+  _normalProgress({Color? valueColor, required Color bgColor}) {
     return CircularProgressIndicator(
       backgroundColor: bgColor,
       valueColor: AlwaysStoppedAnimation<Color?>(valueColor),
